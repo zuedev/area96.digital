@@ -1,4 +1,5 @@
 import VideoBackground from "@/components/VideoBackground";
+import Navigation from "@/components/Navigation";
 
 import "./page.css";
 
@@ -8,7 +9,7 @@ export default function Home() {
       <VideoBackground src="4124198-hd_1920_1080_24fps.mp4" type="video/mp4" />
       <div className="flex flex-col p-4 min-h-full">
         <main className="space-y-4 max-w-prose text-justify grow">
-          <h1 className="text-4xl font-bold area96gradientText">
+          <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500">
             Area 96 Digital
           </h1>
           <blockquote className="text-xl">
@@ -20,6 +21,8 @@ export default function Home() {
             aim is to help you focus on what you do best, while we take care of
             the rest.
           </p>
+          <hr />
+          <Navigation />
         </main>
         <footer className="text-sm">
           Made with ❤️ by{" "}
@@ -27,7 +30,7 @@ export default function Home() {
             href="https://zue.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-pink-500 hover:underline"
+            className="text-pink-600 hover:underline hover:text-pink-400 font-semibold"
           >
             zuedev
           </a>

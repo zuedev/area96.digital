@@ -12,8 +12,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.area96gradientText {
+/* .area96gradientText {
   background: linear-gradient(135deg, #0ff, #0f0 50%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
