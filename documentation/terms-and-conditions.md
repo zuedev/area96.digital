@@ -1,3 +1,0 @@
-# Terms and Conditions of Area96 Digital
-
-Area96 Digital services are provided on an "as-is" basis without warranties of any kind, either express or implied. Due to the bespoke and personalized nature of our consultation services, we cannot guarantee refunds once services are rendered. By using our services, you acknowledge and agree that Area96 Digital will not be liable for any direct, indirect, incidental, consequential, or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses resulting from the use of or inability to use the service. Your use of our services is at your sole risk.
