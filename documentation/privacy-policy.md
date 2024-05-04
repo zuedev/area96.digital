@@ -1,0 +1,3 @@
+# Privacy Policy of Area96 Digital
+
+At Area96 Digital, we are committed to protecting your privacy. We only collect personal information that is relevant and necessary to provide our services to you. This data may include information such as your name, contact details, and any other information required to enhance your experience with our services. We want to reassure you that Area96 Digital does not, and will never sell your personal data to third parties. Our goal is to use your information solely for the purpose of delivering and improving the services we provide to you, maintaining transparency, and ensuring security in all our interactions.
