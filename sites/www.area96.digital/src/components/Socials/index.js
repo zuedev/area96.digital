@@ -3,8 +3,8 @@ export default function Socials(props) {
 
   if (!socials) return null;
 
-  if (!space) space = 4;
-  if (!height) height = 8;
+  if (!space) space = "4";
+  if (!height) height = "8";
 
   return (
     <ul className={`flex flex-row space-x-${space}`}>
