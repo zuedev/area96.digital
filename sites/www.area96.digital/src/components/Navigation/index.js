@@ -1,19 +1,11 @@
-const links = [
-  {
-    text: "Services",
-    href: "https://github.com/zuedev/area96.digital/blob/main/documentation/services.md",
-    target: "_blank",
-  },
-  {
-    text: "Contact",
-    href: "mailto:contact@area96.digital",
-  },
-];
+export default function Navigation(props) {
+  const { links } = props;
 
-export default function Navigation() {
+  if (!links) return null;
+
   return (
     <>
-      <ul className="flex space-x-4 text-yellow-500 text-lg font-semibold">
+      <ul className="flex space-x-4 text-yellow-500 text-xl font-semibold">
         {links.map((link) => (
           <li key={link.href}>
             <a

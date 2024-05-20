@@ -1,5 +1,6 @@
 import VideoBackground from "@/components/VideoBackground";
 import Navigation from "@/components/Navigation";
+import Socials from "@/components/Socials";
 
 import "./page.css";
 
@@ -22,7 +23,40 @@ export default function Home() {
             the rest.
           </p>
           <hr />
-          <Navigation />
+          <div className="flex flex-row justify-between">
+            <Navigation
+              links={[
+                {
+                  text: "Services",
+                  href: "https://github.com/zuedev/area96.digital/blob/main/documentation/services.md",
+                  target: "_blank",
+                },
+                {
+                  text: "Contact",
+                  href: "mailto:contact@area96.digital",
+                },
+              ]}
+            />
+            <Socials
+              socials={[
+                {
+                  href: "https://x.com/area96digital",
+                  icon: "https://cdn.simpleicons.org/x/fff",
+                  title: "X/Twitter",
+                },
+                {
+                  href: "https://bsky.app/profile/area96.digital",
+                  icon: "https://cdn.simpleicons.org/bluesky",
+                  title: "X/Twitter",
+                },
+                {
+                  href: "https://github.com/zuedev/area96.digital",
+                  icon: "https://cdn.simpleicons.org/github/fff",
+                  title: "GitHub",
+                },
+              ]}
+            />
+          </div>
         </main>
         <footer className="text-sm">
           Made with ❤️ by{" "}
