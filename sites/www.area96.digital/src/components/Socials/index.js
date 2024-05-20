@@ -1,10 +1,10 @@
 export default function Socials(props) {
-  let { socials, space, height } = props;
+  const socials = props.socials;
 
   if (!socials) return null;
 
-  if (!space) space = "4";
-  if (!height) height = "8";
+  const space = props.space || "4";
+  const height = props.height || "8";
 
   return (
     <ul className={`flex flex-row space-x-${space}`}>
