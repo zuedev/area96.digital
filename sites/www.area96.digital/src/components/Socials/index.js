@@ -3,19 +3,12 @@ export default function Socials(props) {
 
   if (!socials) return null;
 
-  const space = props.space || "4";
-  const height = props.height || "8";
-
   return (
-    <ul className={`flex flex-row space-x-${space}`}>
+    <ul className="flex flex-row space-x-4">
       {socials.map((social) => (
         <li key={social.href}>
           <a href={social.href}>
-            <img
-              src={`${social.icon}`}
-              className={`h-${height}`}
-              title={social.title}
-            />
+            <img src={`${social.icon}`} className="h-8" title={social.title} />
           </a>
         </li>
       ))}
