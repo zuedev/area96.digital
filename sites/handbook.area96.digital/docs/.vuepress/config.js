@@ -9,7 +9,7 @@ import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
 import { noticePlugin } from "@vuepress/plugin-notice";
 import { nprogressPlugin } from "@vuepress/plugin-nprogress";
 import { watermarkPlugin } from "@vuepress/plugin-watermark";
-import { searchPlugin } from "@vuepress/plugin-search";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
   base: "/",
@@ -62,6 +62,6 @@ export default defineUserConfig({
         globalAlpha: 0.05,
       },
     }),
-    searchPlugin({}),
+    searchProPlugin({}),
   ],
 });
