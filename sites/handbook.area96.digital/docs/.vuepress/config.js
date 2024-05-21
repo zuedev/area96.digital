@@ -10,6 +10,11 @@ import { noticePlugin } from "@vuepress/plugin-notice";
 import { nprogressPlugin } from "@vuepress/plugin-nprogress";
 import { watermarkPlugin } from "@vuepress/plugin-watermark";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { pwaPlugin } from "@vuepress/plugin-pwa";
+import { seoPlugin } from "@vuepress/plugin-seo";
+import { sitemapPlugin } from "@vuepress/plugin-sitemap";
+import { prismjsPlugin } from "@vuepress/plugin-prismjs";
+import { readingTimePlugin } from "@vuepress/plugin-reading-time";
 
 export default defineUserConfig({
   base: "/",
@@ -62,6 +67,32 @@ export default defineUserConfig({
         globalAlpha: 0.05,
       },
     }),
-    searchProPlugin({}),
+    searchProPlugin({
+      indexContent: true,
+      autoSuggestions: true,
+      searchDelay: 0,
+    }),
+    pwaPlugin({
+      showInstall: true,
+      cacheHTML: true,
+      cacheImages: true,
+      update: "available",
+    }),
+    seoPlugin({}),
+    sitemapPlugin({}),
+    prismjsPlugin({
+      preloadLanguages: [
+        "sh",
+        "bash",
+        "powershell",
+        "yaml",
+        "json",
+        "plaintext",
+        "markdown",
+        "javascript",
+        "python",
+      ],
+    }),
+    readingTimePlugin({}),
   ],
 });
