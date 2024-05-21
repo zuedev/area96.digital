@@ -3,6 +3,13 @@ import { defineUserConfig } from "vuepress/cli";
 import { viteBundler } from "@vuepress/bundler-vite";
 
 import { gitPlugin } from "@vuepress/plugin-git";
+import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
+import { copyCodePlugin } from "@vuepress/plugin-copy-code";
+import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
+import { noticePlugin } from "@vuepress/plugin-notice";
+import { nprogressPlugin } from "@vuepress/plugin-nprogress";
+import { watermarkPlugin } from "@vuepress/plugin-watermark";
+import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   base: "/",
@@ -38,5 +45,23 @@ export default defineUserConfig({
     vuePluginOptions: {},
   }),
 
-  plugins: [gitPlugin({})],
+  plugins: [
+    gitPlugin({}),
+    backToTopPlugin(),
+    copyCodePlugin({}),
+    mediumZoomPlugin({}),
+    noticePlugin({}),
+    nprogressPlugin(),
+    watermarkPlugin({
+      enabled: false,
+      watermarkOptions: {
+        contentType: "image",
+        image: "/logo96.png",
+        imageWidth: 64,
+        imageHeight: 64,
+        globalAlpha: 0.05,
+      },
+    }),
+    searchPlugin({}),
+  ],
 });
