@@ -27,8 +27,8 @@ export default function Home() {
             <Navigation
               links={[
                 {
-                  text: "Services",
-                  href: "https://github.com/zuedev/area96.digital/blob/main/documentation/services.md",
+                  text: "Handbook",
+                  href: "https://handbook.area96.digital",
                   target: "_blank",
                 },
                 {
