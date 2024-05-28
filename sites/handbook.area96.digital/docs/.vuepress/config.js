@@ -81,7 +81,9 @@ export default defineUserConfig({
     seoPlugin({
       hostname: "https://handbook.area96.digital",
     }),
-    sitemapPlugin({}),
+    sitemapPlugin({
+      hostname: "https://handbook.area96.digital",
+    }),
     prismjsPlugin({
       preloadLanguages: [
         "sh",
