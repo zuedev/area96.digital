@@ -78,7 +78,9 @@ export default defineUserConfig({
       cacheImages: true,
       update: "available",
     }),
-    seoPlugin({}),
+    seoPlugin({
+      hostname: "https://handbook.area96.digital",
+    }),
     sitemapPlugin({}),
     prismjsPlugin({
       preloadLanguages: [
