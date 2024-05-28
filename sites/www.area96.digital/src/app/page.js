@@ -27,6 +27,11 @@ export default function Home() {
             <Navigation
               links={[
                 {
+                  text: "Blog",
+                  href: "https://blog.area96.digital",
+                  target: "_blank",
+                },
+                {
                   text: "Handbook",
                   href: "https://handbook.area96.digital",
                   target: "_blank",
